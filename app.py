@@ -1,7 +1,13 @@
 import requests
 import time
 
-while True:
+
+def send_request():
     response = requests.get('https://dummyjson.com/products/1')
     print(response.json())
-    time.sleep(5)
+
+
+if __name__ == '__main__':
+    while True:
+        send_request()
+        time.sleep(3)
