@@ -8,6 +8,7 @@ def send_request():
 
 
 if __name__ == '__main__':
+    print('starting requests')
     while True:
         send_request()
         time.sleep(3)
